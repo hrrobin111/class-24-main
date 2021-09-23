@@ -1,0 +1,391 @@
+/*******Default Style Start********/
+
+
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*******Default Style End********/
+
+/* Header start */
+
+.header-section{
+    background-color: #e6e6e6 !important;
+}
+.header-section .navbar-brand{}
+
+.main-menu {}
+.main-menu  li{}
+
+.main-menu  li a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #6c636b;
+    font-weight: 500;
+    position: relative;
+}
+.main-menu  li a:hover{
+    color: #0d6efd;
+}
+
+.main-menu  li .active{
+    color: #0d6efd;
+}
+.main-menu  li .active::after{
+    width: 72%;
+}
+.main-menu  li a::after  {
+    content: "";
+    position: absolute;
+    top: 144%;
+    left: 16px;
+    width: 0%;
+    height: 2px;
+    background-color: #0d6efd5e;
+    transition: .7s;
+}
+
+.main-menu  li a:hover::after{
+    width: 72%;
+}
+
+
+.header-btn .btn-primary  {
+    color: #0d6efd;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.header-btn .btn-primary::after{
+    content: "";
+    position: absolute;
+    background-color: #7672fe;
+    transition: all .4s ;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+   
+}
+
+.header-btn .btn-primary:hover::after{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    
+    
+}
+
+/* banner-section */
+
+.banner-section{
+   position: relative;
+   height: 100vh;
+  
+
+}
+
+.banner-img img {
+    height: 750px;
+    width: 750px;
+    border-radius: 50%;
+    position: absolute;
+    top: -72px;
+    right: -152px;
+    z-index: -1;
+}
+
+.banner-text {
+    margin-top: 190px;
+    
+}
+.banner-text h1{
+    margin-bottom: 40px;
+}
+.banner-text p{
+    color: #606060;
+    margin-bottom: 40px;
+}
+.banner-btn .btn-primary {
+    border-radius: 17px;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 20px;
+    transition: .4s;
+}
+
+.banner-btn .btn-primary:hover{
+    border-color: #7672fe;
+    color: #7672fe;
+    background-color: #fff;
+}
+
+/* service-section */
+
+.service-section{
+    padding: 50px 0;
+}
+.service-title h5{
+    color: #7672fe;
+}
+
+.service-title h1{
+    font-weight: 600;
+    position: relative;
+}
+
+.service-title h1::after {
+    position: absolute;
+    content: "";
+    width: 7%;
+    height: 3px;
+    background-color: #7672fe9e;
+    top: 109%;
+    left: 1px;
+}
+
+.service-title p {
+    color: #606060;
+    font-size: 17px;
+    width: 671px;
+}
+
+/* box */
+
+
+.xl-4{
+    position: relative;
+}
+.service-items {
+    margin-top: 40px;
+    background-color: #fbfdff;
+    padding: 20px;
+    box-shadow: 2px 2px 30px 0 #ffe9e9;
+    border-radius: 10px;
+    transition: .4s;
+    z-index: 99;
+
+}
+
+.s-item-1 {
+    position: absolute;
+    left: -45px;
+    top: 121px;
+    z-index: -1;
+}
+
+.service-items h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.service-items span {
+    color: #fff;
+    background-color: #505af7;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    border-radius: -3%;
+    border-radius: 44px 43px 38px 7px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.service-items span::after {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: #7672fe9e;
+    top: 127%;
+    left: 1px;
+    transition: .7s;
+}
+.service-items p {
+    color: #606060;
+    margin-bottom: 22px;
+}
+
+/* hover */
+.service-items:hover{
+    background-color: #505af7;
+    color: #fff;
+}
+
+.service-items:hover span {
+    background-color: #fff;
+    color: #505af7;
+    
+}
+.service-items:hover span::after{
+    background-color: #fff;
+    width: 80%;
+}
+
+.service-items:hover p{
+    color: #fff;
+  
+}
+
+/* animation section */
+
+
+.animation-section{
+    margin-top: 20px;
+    padding: 100px 0;
+    background: url("img/video-bg.jpg") no-repeat top center;
+    color: #fff;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.animation-section::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #0d1038a8;
+    z-index: -1;
+}
+.animation-text{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+.animation-text h5 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.animation-text h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.animation-text h1::after {
+    content: "";
+    position: absolute;
+    top: 124%;
+    left: 42%;
+    background-color: #fdfdff;
+    width: 86px;
+    height: 3px;
+    text-align: center;
+}
+.animation-text p {
+    width: 500px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 55px;
+}
+
+.animation-btn span {
+    color: #505af7;
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    line-height: 70px;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    animation: animation-btn ;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+.animation-btn span::after {
+    content: "";
+    width: 90px;
+    height: 90px;
+    border-radius: 60%;
+    top: -11px;
+    left: -10px;
+    border: 1px solid #fff;
+    position: absolute;
+    animation: play-btn 1.6s ease-out infinite;
+}
+
+@keyframes play-btn{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+    49%{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+
+    50%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+.animation-btn span::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    border-radius: 60%;
+    top: -11px;
+    left: -10px;
+    border: 1px solid #fff;
+    position: absolute;
+    animation: second-paly 1.6s ease-out infinite;
+
+}
+
+@keyframes second-paly{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+    49%{
+        transform: scale(1.3);
+        opacity: 0;
+    }
+
+    50%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
